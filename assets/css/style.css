@@ -8,84 +8,12 @@ a{
 body{
     font-family: 'DM Sans', sans-serif;
 }
-/* HEADER START */
 
-
-.header_block{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(49, 48, 48);
-}
-.header_block div{
-    padding: 20px;
-}
-.links a{
-    margin-right: 20px;
-    color: #f1f1f1;
-    font-size: 18px;
-}
-.links a:last-child{
-    margin-right: 0;
-}
-.links a:hover{
-    color: rgb(241, 199, 10);
-}
-
-
-/* HEADER END'S */
-
-/* HERO SECTION START */
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    background: grey;
-    box-shadow: 0 0 15px #00000073;
-}
-.hero .banner img{
-    width: 100% ;
-}
-.text_wrapper h1{
-    padding: 0;
-    font-size: 32px;
-
-}
-.text_wrapper{
-    font-size: 30px;
-    color: black;
-}
-.text_wrapper .btn{
-    padding: 10px;
-    border-radius: 20px;
-    background: rgb(236, 194, 4);
-    margin-top: 20px;
-    font-size: 18px;
-    margin: 0 auto;
-}
-p{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: rgba(50, 52, 187, 0.842);
-    border-top: 1px solid grey;
-}
-label{
-    text-transform: uppercase;
-    color: #00000069;
-}
-.hero .text_wrapper{
-    margin-left: 20px;
-    margin-top: 40px;
-}
-.hero .banner{
-    margin-top: 40px;
-}
-
-/* HERO SECTION END'S */
 
 /* SECTION START */
+section{
+    margin: 20px;
+}
 .section_block p{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -95,14 +23,15 @@ label{
 h1{
     text-align: center;
     font-size: 40px;
-    padding: 20px;
+    margin-bottom: 10px;
 }
 .container{
     max-width: 1360px;
-    padding: 0 15px;
+    padding:15px;
     margin: 0 auto;
     background: #f1f1f1;
-    background: darkgray;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 .section_block h3{
     padding: 15px;
@@ -116,10 +45,9 @@ h1{
     width: 25px;
     height: 25px;
     position: absolute;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .section_block{
-    margin-bottom: 20px;
     margin-top: 20px;
     box-shadow: 0 0 15px #000000;
     position: relative;
@@ -128,9 +56,7 @@ h1{
 h3{
     cursor: pointer;
 }
-h3:hover{
-    color: rgb(241, 199, 10);
-}
+
 p.active{
     display: block;
 }    
