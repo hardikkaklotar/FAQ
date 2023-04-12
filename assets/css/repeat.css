@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    max-width: 1390px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* HEADER START */
+.header_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header_block{
+    box-shadow: 0 0 15px #00000027;
+}
+.header_block img{
+    padding: 15px;
+}
+.header_block nav{
+    margin-left: 20px;
+}
+.header_block nav a{
+    margin-right: 20px;
+}
+.header_block nav a:last-child{
+    margin-right: 0;
+}
+
+/* HEADER END'S */
+
+/* MAIN START */
+
+/* HERO/BANNER SECTION START */
+.banner_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text_wrapper h3{
+    font-size: ;
+}
+.text_wrapper p{
+    font-size: ;
+}
+.text_wrapper a{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* HERO/BANNER SECTION END'S */
+
+.section_block{
+    box-shadow: 0 0 15px #00000027;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+.section_block h1{
+    padding: 10px;
+    background-size: 20px;
+}
+.section_block p{
+    padding: 10px;
+    display: none;
+}
+.section_block h1:after{
+    content: "";
+    background: url(../images/icons/down-arrow-svgrepo-com.svg) no-repeat right;
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    transition: all 1s;
+}
+h1{
+    cursor: pointer;
+}
+h1:hover{
+    color: red; 
+}
+.section_block.active h1:after{
+    
+    transform: rotate(180deg);
+}
+/* MAIN END's */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>DOCUMENT</title>
+
+        <!-- META TAGS -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        
+        <main>
+            <!-- SECTION START -->
+            <section>
+                <div class="container">
+                    <h1>FAQs</h1>
+                    <div class="section_wrapper">
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                        <div class="section_block">
+                            <h3>LOREM IPSUM TEXT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+                                maiores reprehenderit amet fuga debitis porro illum. Nesciunt ipsam et 
+                                saepe. Nihil iure eos velit eveniet recusandae tenetur eius nesciunt 
+                                aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION END'S -->
+
+        </main>
+        <!-- MAIN END'S -->
+
+        <!-- JQUERY -->
+        <script src="assets/js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".section_block h3").click(function(){
+                    $("p").slideUp();
+
+                    if( $(this).parents(".section_block").hasClass("active")){
+                        console.log("YES")
+                        $(".section_block").removeClass("active")
+
+                    }else{$(".section_block").removeClass("active")
+                        $(this).parents(".section_block").addClass("active")
+                        $(this).parent(".section_block").find("p").slideDown()
+
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
